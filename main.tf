@@ -13,12 +13,6 @@ provider "aws" {
   region = var.region
 }
 
-resource "github_repository" "hashicat" {
-  name        = "hashicat-new"
-  description = "My awesome codebase"
-  private     = false
-}
-
 
 resource "aws_vpc" "hashicat" {
   cidr_block           = var.address_space
